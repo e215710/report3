@@ -39,6 +39,7 @@ public class Enemy {
     /**
      * Heroへ攻撃するメソッド。
      * attackに応じて乱数でダメージを算出し、hero.wounded()によりダメージ処理を実行。
+     * 勇者のHPが０より大きい時に実行する。
      * @param hero 攻撃対象
      */
     public void attack(Hero hero){
