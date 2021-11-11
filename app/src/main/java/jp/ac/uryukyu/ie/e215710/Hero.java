@@ -18,12 +18,32 @@ public class Hero {
         return this.name ;
     }
 
+    public int getHitPoint() {
+        return this.hitPoint ;
+    }
+
+    public int getAttack() {
+        return this.attack ;
+    }
+
     public boolean isDead() {
         return this.dead ;
     }
 
-    public int getHitPoint() {
-        return this.hitPoint ;
+    public void setName(String name) {
+        this.name = name ;
+    }
+    
+    public void setHitPoint(int hitPoint) {
+        this.hitPoint = hitPoint ;
+    }
+
+    public void setAttack(int attack) {
+        this.attack = attack ;
+    }
+
+    public void setDead(boolean dead) {
+        this.dead = dead ;
     }
 
     /**
