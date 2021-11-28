@@ -20,20 +20,13 @@ class WarriorTest {
         Warrior superHero = new Warrior("スーパーヒーロー", defaultHeroHp, attackHero) ;
         Enemy lucifer = new Enemy("ルシファー", defaultEnemyHp, attackEnemy) ;
 
-        
-        superHero.attackWithWeponSkill(lucifer) ;
-        lucifer.attack(superHero) ;
-        int result = defaultEnemyHp-lucifer.getHitPoint() ;
-        assertEquals((int)(attackHero*1.5),result);
-        int a = lucifer.getHitPoint() ;
-
-        superHero.attackWithWeponSkill(lucifer) ;
-        lucifer.attack(superHero) ;
-        assertEquals((int)(attackHero*1.5), a-lucifer.getHitPoint());
-        int b = lucifer.getHitPoint() ;
-
-        superHero.attackWithWeponSkill(lucifer) ;
-        lucifer.attack(superHero) ;
-        assertEquals((int)(attackHero*1.5), b-lucifer.getHitPoint());
+        for(int i=0; i<3; i++) {
+            int enemyHp = lucifer.getHitPoint() ;
+            superHero.attackWithWeponSkill(lucifer) ;
+            lucifer.attack(superHero) ;
+            int takenEnemyHp = lucifer.getHitPoint() ;
+            int result = enemyHp - takenEnemyHp ;
+            assertEquals((int)(attackHero*1.5), result);
+        }
     }
 }
