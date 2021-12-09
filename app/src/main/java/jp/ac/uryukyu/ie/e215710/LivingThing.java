@@ -40,7 +40,7 @@ public class LivingThing {
 
     /**
      * getterメソッド
-     * Nameを取得する
+     * nameを取得する
      * @return name
      */
     public String getName() {
@@ -56,6 +56,50 @@ public class LivingThing {
         return this.hitPoint ;
     }
 
+    /**
+      * getterメソッド
+      * attackを取得する
+      * @return attack
+      */
+      public int getAttack() {
+        return this.attack ;
+    }
+
+    /**
+      * setterメソッド
+      * nameを変更したい時に使う
+      * @param name
+      */
+      public void setName(String name) {
+        this.name = name ;
+    }
+
+    /**
+      * setterメソッド
+      * hitPointを変更したい時に使う
+      * @param hitPoint
+      */
+      public void setHitPoint(int hitPoint) {
+        this.hitPoint = hitPoint ;
+    }
+
+    /**
+      * setterメソッド
+      * attackを変更したい時に使う
+      * @param attack
+      */
+      public void setAttack(int attack) {
+        this.attack = attack ;
+    }
+
+    /**
+      * setterメソッド
+      * deadを変更したい時に使う
+      * @param dead
+      */
+      public void setDead(boolean dead) {
+        this.dead = dead ;
+    }
     /**
      * LivingThingへ攻撃するメソッド。
      * attackに応じて乱数でダメージを算出し、opponent.wounded()によりダメージ処理を実行。
