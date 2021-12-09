@@ -1,5 +1,3 @@
-import com.google.j2objc.annotations.WeakOuter;
-
 import jp.ac.uryukyu.ie.e215710.*;
 
 public class Main {

@@ -11,67 +11,13 @@ package jp.ac.uryukyu.ie.e215710;
 public class Hero extends LivingThing {
 
     /**
-     * getterメソッド
-     * hitPointを取得する
-     * @return hitPoint //ヒーローのHP
-     */
-    public int getHitPoint() {
-        return this.hitPoint ;
-    }
-
-    /**
-     * getterメソッド
-     * attackを取得する
-     * @return attack //ヒーローの攻撃力
-     */
-    public int getAttack() {
-        return this.attack ;
-    }
-
-    /**
-     * setterメソッド
-     * nameを変更したい時に使う
-     * @param name //ヒーローの名前
-     */
-    public void setName(String name) {
-        this.name = name ;
-    }
-    
-    /**
-     * setterメソッド
-     * hitPointを変更したい時に使う
-     * @param hitPoint //ヒーローのHP
-     */
-    public void setHitPoint(int hitPoint) {
-        this.hitPoint = hitPoint ;
-    }
-
-    /**
-     * setterメソッド
-     * attackを変更したい時に使う
-     * @param attack //ヒーローの攻撃力
-     */
-    public void setAttack(int attack) {
-        this.attack = attack ;
-    }
-
-    /**
-     * setterメソッド
-     * deadを変更したい時に使う
-     * @param dead //ヒーローの生死状態
-     */
-    public void setDead(boolean dead) {
-        this.dead = dead ;
-    }
-
-    /**
      * コンストラクタ。名前、最大HP、攻撃力を指定する。
-     * @param name ヒーロー名
-     * @param maximumHP ヒーローのHP
-     * @param attack ヒーローの攻撃力
+     * @param name 勇者名
+     * @param maximumHP 勇者のHP
+     * @param attack 勇者の攻撃力
      */
-    public Hero (String name, int maximumHP, int attack) {
-        super(name, maximumHP, attack) ;
+    public Hero(String name, int maximumHP, int attack) {
+        super(name, maximumHP, attack);
     }
 
     /**
